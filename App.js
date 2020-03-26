@@ -4,8 +4,6 @@ import { AppLoading } from 'expo';
 
 import Navigator from './routes/drawer';
 
-// import Home from './screens/home';
-
 const getFonts = () => 
   Font.loadAsync({
     'nunito-regular': require('./assets/fonts/Nunito-Regular.ttf'),
