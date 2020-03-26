@@ -10,10 +10,10 @@ const Stack = createStackNavigator();
 export default function Navigator() {
     return(
         <Stack.Navigator>
-            <Stack.Screen name='Home' component={Home} options={{   headerTitle: () => <Header />,
-            headerTitleAlign: 'center',
-                headerStyle: { backgroundColor: '#eee' }
-
+            <Stack.Screen name='Home' component={Home} options={   ( {navigation} ) => {
+                return  {headerTitle: () => <Header navigation={navigation}/>,
+                    headerTitleAlign: 'center',
+                    headerStyle: { backgroundColor: '#eee' } }
             }
             } />
             <Stack.Screen name='ReviewDetails' component={ReviewDetails} options={{title: "Review Details"}}/>

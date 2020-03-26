@@ -9,9 +9,11 @@ const Stack = createStackNavigator();
 export default function AboutStack() {
     return(
             <Stack.Navigator>
-                <Stack.Screen name='About' component={About} options={{   headerTitle: () => <Header />,
-                            headerTitleAlign: 'center',
-                }
+                <Stack.Screen name='About' component={About} options={( {navigation} ) => {
+                return  {headerTitle: () => <Header navigation={navigation} />,
+                    headerTitleAlign: 'center',
+                    headerStyle: { backgroundColor: '#eee' } }
+            }
                 } />
             </Stack.Navigator>
     )

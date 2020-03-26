@@ -6,16 +6,16 @@ import { NavigationContainer } from '@react-navigation/native';
 import AboutStack from './aboutStack';
 import HomeStack from './homeStack';
 
-const Drawer = createDrawerNavigator();
+const RootDrawer = createDrawerNavigator();
 
 
-export default function Drawerr() {
+export default function Drawer() {
     return(
         <NavigationContainer>
-            <Drawer.Navigator>
-                <Drawer.Screen name="Home" component={HomeStack}></Drawer.Screen>
-                <Drawer.Screen name="About" component={AboutStack}></Drawer.Screen>
-            </Drawer.Navigator>
+            <RootDrawer.Navigator>
+                <RootDrawer.Screen name="Home" component={HomeStack} ></RootDrawer.Screen>
+                <RootDrawer.Screen name="About" component={AboutStack}></RootDrawer.Screen>
+            </RootDrawer.Navigator>
         </NavigationContainer>
     )
 }
