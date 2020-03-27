@@ -11,7 +11,7 @@ export default function Navigator() {
     return(
         <Stack.Navigator>
             <Stack.Screen name='Home' component={Home} options={   ( {navigation} ) => {
-                return  {headerTitle: () => <Header navigation={navigation}/>,
+                return  {headerTitle: () => <Header navigation={navigation} title='GameZone' />,
                     headerTitleAlign: 'center',
                     headerStyle: { backgroundColor: '#eee' } }
             }

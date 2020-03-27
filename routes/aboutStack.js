@@ -10,7 +10,7 @@ export default function AboutStack() {
     return(
             <Stack.Navigator>
                 <Stack.Screen name='About' component={About} options={( {navigation} ) => {
-                return  {headerTitle: () => <Header navigation={navigation} />,
+                return  {headerTitle: () => <Header navigation={navigation} title='About GameZone' />,
                     headerTitleAlign: 'center',
                     headerStyle: { backgroundColor: '#eee' } }
             }
