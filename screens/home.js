@@ -26,7 +26,6 @@ export default function Home({ navigation }) {
 
     return(
         <View style={globalStyles.container}>
-
             <Modal visible={modalOpen} animationType='slide'>
                 <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={style.modalContent}>
